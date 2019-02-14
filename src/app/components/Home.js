@@ -2,11 +2,13 @@ import React from "react";
 
 export class Home extends React.Component {
     render() {
-        const age = this.props.age + 1;
+        const pet_img = require('../../../assets/acara.png'); // with require
+
         return (
             <div>
-                <h3>Hello {this.props.name}!</h3>
-                <p>You're almost {age}</p>
+                <h3>This is your pet: {this.props.name}!</h3>
+                 <img src={pet_img}/>
+                <p>You're almost {this.props.size}px big</p>
             </div>
         );
     }

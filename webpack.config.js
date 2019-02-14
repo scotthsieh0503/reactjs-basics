@@ -20,6 +20,10 @@ var config = {
                 query: {
                     presets: ['react', 'es2015', 'stage-2']
                 }
+            },
+            {
+              test: /\.(png|jpg|gif)$/i,
+              loader: 'url-loader?limit=100000',
             }
         ]
     }
