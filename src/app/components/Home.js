@@ -30,7 +30,7 @@ export class Home extends React.Component {
 
     render() {
         const image = require.context('../../../assets', true);
-        const pet_img = image(`./${this.state.name}.png`); // with require
+        let pet_img = image(`./${this.state.name}.png`); // with require
 
         return (
             <div>
