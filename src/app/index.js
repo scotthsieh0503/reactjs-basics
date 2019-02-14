@@ -5,14 +5,6 @@ import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 
 class App extends React.Component {
-    constructor() {
-        super();
-        this.age = 27;
-    }
-
-    onSayHello() {
-        alert("Hello!");
-    }
 
     render() {
         return (
@@ -24,7 +16,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home name={"Max"} age={this.age} greet={this.onSayHello}/>
+                        <Home name={"aisha"} size={200}/>
                     </div>
                 </div>
             </div>
