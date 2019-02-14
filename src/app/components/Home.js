@@ -24,8 +24,7 @@ export class Home extends React.Component {
     render() {
         const image = require.context('../../../assets', true);
         const pet_img = image(`./${this.props.name}.png`); // with require
-        const size = this.state.size;
-        console.log(size);
+        
         return (
             <div>
                 <h3>This is your pet: {this.props.name}!</h3>
