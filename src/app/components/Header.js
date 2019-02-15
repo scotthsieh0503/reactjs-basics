@@ -8,6 +8,8 @@ export class Header extends React.Component {
                     <div className="navbar-header">
                         <ul className="nav navbar-nav">
                             <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Settings</a></li>
                         </ul>
                     </div>
                 </div>
