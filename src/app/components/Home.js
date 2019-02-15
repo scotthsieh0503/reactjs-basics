@@ -10,19 +10,19 @@ export class Home extends React.Component {
          };
     }
 
-    onFeed() {
+    onFeed = () => {
       this.setState({
                  size: this.state.size + 20
              });
     }
 
-    onStarve() {
+    onStarve = () => {
       this.setState({
                  size: this.state.size - 20
              });
     }
 
-    onHandleChange(event) {
+    onHandleChange = (event) => {
       this.setState({
                  name: event.target.value
                });
@@ -44,7 +44,7 @@ export class Home extends React.Component {
                 <h3>This is your pet: {this.state.name}!</h3>
                 <img src={pet_img} height={this.state.size} width={this.state.size}/>
                 <p>You're almost {this.state.size}px big</p>
-                <button className="btn btn-danger" onClick={this.onStarve.bind(this)}>- Starve </button>
+                <button className="btn btn-danger" onClick={this.onStarve}>- Starve </button>
                 &nbsp;
                 <button className="btn btn-success" onClick={this.onFeed.bind(this)}>+ Feed </button>
             </div>
